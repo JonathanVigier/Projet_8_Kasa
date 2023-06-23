@@ -1,0 +1,25 @@
+.stars-container {
+    display: flex;
+    gap: 15px;
+    margin: 0 0 12px 0;
+
+    @media screen and (max-width: 425px) {
+        gap: 5px;
+        justify-self: start;
+    }
+
+    .red-star {
+        color: #FF6060;
+    }
+
+    .grey-star {
+        color: lightgrey;
+        opacity: 0.4;
+    }
+
+    .fa-solid {
+        @media screen and (max-width:425px) {
+            font-size: 13px;
+        }
+    }
+}

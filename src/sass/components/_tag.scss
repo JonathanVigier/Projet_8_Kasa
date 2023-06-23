@@ -1,0 +1,27 @@
+@import "../utils/variables";
+
+.tag-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 3px 21px;
+    background: $redColor;
+    border-radius: 10px;
+
+    @media screen and (max-width: 425px) {
+        height: 18px;
+        max-width: 84px;
+    }
+
+    .tag-text {
+        color: $whiteText;
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 20px;
+
+        @media screen and (max-width: 425px) {
+            font-size: 10px;
+        }
+    }
+}

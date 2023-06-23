@@ -1,0 +1,106 @@
+@import "../utils/variables";
+
+.collapse-container {
+    overflow: hidden;
+
+    &.detailed-dwelling {
+        margin-bottom: 50px;
+
+        @media screen and (max-width: 425px) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .collapse-content {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 47px;
+        padding: 0 17px 0 8px;
+        border-radius: 5px;
+        background: $redColor;
+        z-index: 2;
+
+        @media screen and (max-width: 425px) {
+            height: 30px;
+        }
+
+        &.detailed-dwelling {
+            border-radius: 10px;
+        }
+
+        .collapse-title {
+            color: $whiteText;
+            font-size: 24px;
+            font-weight: 500;
+
+            @media screen and (max-width: 425px) {
+                font-size: 0.8rem;
+            }
+
+            @media screen and (min-width: 426px) and (max-width: 1024px) {
+                font-size: 1.2rem;
+            }
+        }
+
+        .fa-solid {
+            color: $white;
+        }
+    }
+
+    .collapse-description-container-hidden {
+        max-height: 0;
+        transition: max-height .3s ease-in-out;
+
+        .collapse-hidden-text {
+            transform: translate(0, -100%);
+            background: $greyColor;
+            padding: 30px 27px 19px 18px;
+            margin: 0 0 33px 0;
+            border-radius: 0 0 5px 5px;
+            text-align: start;
+            font-size: 24px;
+            line-height: 34px;
+            color: $redColor;
+            transition: transform .3s ease-in-out;
+
+            @media screen and (max-width: 425px) {
+                font-size: 0.8rem;
+                line-height: 17px;
+            }
+
+            @media screen and (min-width: 426px) and (max-width: 1024px) {
+                font-size: 1rem;
+                line-height: 1.6rem;
+            }
+        }
+    }
+
+    &.is-open {
+
+        .collapse-description-container-hidden {
+            max-height: 300px;
+
+            .collapse-hidden-text {
+                transform: translate(0, 0);
+            }
+        }
+    }
+}
+
+.collapses-container {
+    display: grid;
+    justify-items: center;
+    gap: 31px;
+    max-width: 1023px;
+    margin: 0 auto 30px auto;
+
+    @media screen and (max-width: 425px) {
+        padding: 0 20px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width:1024px) {
+        padding: 0 80px;
+    }
+}

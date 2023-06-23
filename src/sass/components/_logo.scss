@@ -1,0 +1,20 @@
+.logo-header-container {
+    background: url(../images/logo_kasa_rouge.png) center/cover;
+    width: 210px;
+    height: 63px;
+
+    @media screen and (max-width: 425px) {
+        width: 145px;
+        height: 47px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1024px) {
+        height: 53px;
+    }
+}
+
+.logo-footer-container {
+    background: url(../images/logo_kasa_blanc.png) center/cover;
+    width: 120px;
+    height: 36px;
+}

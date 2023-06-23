@@ -1,0 +1,125 @@
+@import "../utils/variables";
+
+.detailed-dwelling-container {
+    padding: 0 100px;
+
+    @media screen and (max-width: 425px) {
+        padding: 0 20px;
+    }
+
+    .heading-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        justify-items: end;
+        align-items: center;
+
+        @media screen and (max-width: 425px) {
+            grid-template-columns: none;
+            grid-template-rows: none;
+            grid-template-areas: "dwelling-infos dwelling-infos"
+                "tag tag"
+                "star host-infos";
+        }
+
+        .title-location-container {
+            color: $redColor;
+            justify-self: start;
+
+            @media screen and (max-width: 425px) {
+                grid-area: dwelling-infos;
+                margin-top: 10px;
+            }
+
+            .title {
+                font-size: 36px;
+                font-weight: 500;
+                line-height: 51px;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 20px;
+                    line-height: 20px;
+                }
+
+                @media screen and (min-width: 426px) and (max-width: 1024px) {
+                    font-size: 26px;
+                }
+            }
+
+            .location {
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .host-infos-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 170px;
+            height: 64px;
+
+            @media screen and (max-width: 425px) {
+                grid-area: host-infos;
+                width: 125px;
+            }
+
+            .host-name {
+                color: $redColor;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 26px;
+                text-align: end;
+
+                @media screen and (max-width: 425px) {
+                    font-size: 12px;
+                }
+            }
+
+            .host-img {
+                width: 64px;
+                height: 64px;
+                border-radius: 50%;
+                object-fit: cover;
+
+                @media screen and (max-width: 425px) {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+
+        .tags-container {
+            display: flex;
+            justify-self: start;
+            gap: 10px;
+            margin: 20px 0 24px 0;
+
+            @media screen and (max-width: 425px) {
+                grid-area: tag;
+                margin: 5px 0 15px 0;
+            }
+        }
+    }
+
+    .dwelling-collapse-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 76px;
+
+        @media screen and (max-width: 425px) {
+
+            grid-template-columns: none;
+            gap: 0px;
+        }
+
+        @media screen and (min-width: 426px) and (max-width: 1024px) {
+            gap: 50px;
+        }
+    }
+}

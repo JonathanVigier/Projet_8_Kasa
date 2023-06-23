@@ -1,0 +1,37 @@
+@import "../utils/variables";
+
+.dwellings-container {
+    padding: 12px 100px 44px 100px;
+
+    @media screen and (max-width: 425px) {
+        padding: 20px;
+    }
+
+    @media screen and (min-width: 426px) and (max-width: 1024px) {
+        padding: 12px 80px 44px 80px;
+    }
+
+    .dwellings-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 340px);
+        justify-items: center;
+        gap: 60px;
+        width: 100%;
+        padding: 56px 50px;
+        background: $greyColor;
+        border-radius: 25px;
+
+        @media screen and (max-width: 425px) {
+            grid-template-columns: none;
+            gap: 20px;
+            padding: 0;
+            background: none;
+        }
+
+        @media screen and (min-width: 426px) and (max-width: 1024px) {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+            padding: 25px;
+        }
+    }
+}

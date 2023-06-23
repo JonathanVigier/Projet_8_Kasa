@@ -1,0 +1,79 @@
+@import "../utils/variables";
+
+.slider {
+    position: relative;
+    height: 100%;
+
+    .chevron-left,
+    .chevron-right {
+        position: absolute;
+        top: 50%;
+        color: $white;
+        font-size: 78px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        transition: .5s ease-in-out;
+
+        &:hover {
+            color: $redColor;
+        }
+
+        @media screen and (max-width: 425px) {
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 426px) and (max-width: 1024px) {
+            font-size: 50px;
+        }
+    }
+
+    .chevron-left {
+        left: 24px;
+
+        @media screen and (max-width: 425px) {
+            left: 5px;
+        }
+    }
+
+    .chevron-right {
+        right: 24px;
+
+        @media screen and (max-width: 425px) {
+            right: 5px;
+        }
+    }
+
+    .slide-container {
+        height: 100%;
+
+        .slide {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: 25px;
+
+            @media screen and (max-width: 425px) {
+                border-radius: 10px;
+            }
+        }
+    }
+
+    .numbering-container {
+        position: absolute;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @media screen and (max-width: 425px) {
+            bottom: 10px;
+        }
+
+        .numbering {
+            color: $white;
+
+            @media screen and (max-width: 425px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

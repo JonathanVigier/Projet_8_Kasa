@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 209px;
+    background: $blackColor;
+    padding: 0 0 29px 0;
+
+    @media screen and (max-width: 425px) {
+        padding: 0;
+        align-items: center;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        width: 500px;
+
+        @media screen and (max-width: 425px) {
+            gap: 35px;
+        }
+
+        .footer-img {
+            width: 122px;
+            height: 40px;
+        }
+
+        .footer-text {
+            color: $whiteText;
+
+            @media screen and (max-width: 425px) {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+}
