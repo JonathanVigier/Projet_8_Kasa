@@ -1,23 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Slider from "./Slider";
-import { useParams } from "react-router-dom";
-import { getDwellingById } from "../services/DwellingData";
+import PropTypes from "prop-types";
 
-const Carousel = () => {
-  const { id } = useParams();
+const Carousel = ({ pictures }) => {
   const [data, setData] = useState({ pictures: [] });
 
   useEffect(() => {
-    const fetchDwelling = async () => {
-      try {
-        const data = await getDwellingById(id);
-        setData(data);
-      } catch (err) {
-        console.error(err);
-      }
-    };
-
-    fetchDwelling();
+    setData(pictures);
   }, []);
 
   return (
@@ -25,6 +14,10 @@ const Carousel = () => {
       <Slider key={data.id} pictures={data.pictures} />
     </div>
   );
+};
+
+Carousel.propTypes = {
+  pictures: PropTypes.array.isRequired,
 };
 
 export default Carousel;

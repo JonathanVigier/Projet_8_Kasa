@@ -18,7 +18,7 @@
             color: $redColor;
         }
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             font-size: 20px;
         }
 
@@ -30,7 +30,7 @@
     .chevron-left {
         left: 24px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             left: 5px;
         }
     }
@@ -38,7 +38,7 @@
     .chevron-right {
         right: 24px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             right: 5px;
         }
     }
@@ -52,7 +52,7 @@
             object-fit: cover;
             border-radius: 25px;
 
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 426px) {
                 border-radius: 10px;
             }
         }
@@ -64,14 +64,14 @@
         left: 50%;
         transform: translateX(-50%);
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             bottom: 10px;
         }
 
         .numbering {
             color: $white;
 
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 426px) {
                 font-size: 14px;
             }
         }

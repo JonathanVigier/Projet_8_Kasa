@@ -9,24 +9,22 @@ const Collapse = ({
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  function toggleCollapse(e) {
+    setIsOpen(!isOpen);
+    e.currentTarget.classList.toggle("is-open");
+  }
+
   return (
     <div
-      className={
-        isDetailedDwellingChild
-          ? "collapse-container detailed-dwelling"
-          : "collapse-container"
-      }
-      onClick={(e) => {
-        setIsOpen(!isOpen);
-        e.currentTarget.classList.toggle("is-open");
-      }}
+      className={`collapse-container
+        ${isDetailedDwellingChild ? "detailed-dwelling" : ""}
+      `}
+      onClick={(e) => toggleCollapse(e)}
     >
       <div
-        className={
-          isDetailedDwellingChild
-            ? "collapse-content detailed-dwelling"
-            : "collapse-content"
-        }
+        className={`collapse-content
+          ${isDetailedDwellingChild ? "detailed-dwelling" : ""}
+        `}
       >
         <h3 className="collapse-title">{title}</h3>
         {isOpen ? (

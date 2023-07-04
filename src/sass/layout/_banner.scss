@@ -4,7 +4,7 @@
     position: relative;
     padding: 35px 100px 31px 100px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         padding: 20px;
     }
 
@@ -19,7 +19,7 @@
         filter: brightness(0.7);
         object-fit: cover;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             border-radius: 10px;
             height: 111px;
         }
@@ -40,7 +40,7 @@
         width: 100%;
         text-align: center;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             font-size: 1.4rem;
             line-height: 24px;
             text-align: left;

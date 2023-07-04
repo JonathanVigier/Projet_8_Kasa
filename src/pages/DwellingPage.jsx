@@ -18,11 +18,11 @@ const DwellingPage = () => {
       setIsLoading(false);
     }, 3000);
 
-    fetchDwelling();
+    fetchDwelling(id);
     return () => clearTimeout(timer);
   }, []);
 
-  const fetchDwelling = async () => {
+  const fetchDwelling = async (id) => {
     try {
       const dwellingData = await getDwellingById(id);
       setDwelling(dwellingData);
@@ -32,7 +32,7 @@ const DwellingPage = () => {
   };
 
   if (isLoading) {
-    return <Loader />;
+    return <Loader isHomeLoader={false} />;
   }
 
   if (!dwelling) {

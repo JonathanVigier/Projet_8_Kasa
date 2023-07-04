@@ -22,37 +22,3 @@ const Router = () => {
 };
 
 export default Router;
-
-// const routes = [
-//   {
-//     path: "/",
-//     element: <Home />,
-//     loader: getAllDwellings,
-//   },
-//   {
-//     path: "dwelling",
-//     element: <DwellingPage />,
-//     loader: getAllDwellings,
-//     children: [
-//       {
-//         path: ":id",
-//         element: <DetailedDwelling />,
-//         loader: getAllDwellings,
-//       },
-//     ],
-//   },
-//   {
-//     path: "/about",
-//     element: <About />,
-//   },
-//   {
-//     path: "/*",
-//     element: <Error404 />,
-//   },
-// ];
-
-// const router = createBrowserRouter(routes);
-
-// const Router = () => {
-//   return <RouterProvider router={router} />;
-// };

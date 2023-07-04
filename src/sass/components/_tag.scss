@@ -9,7 +9,7 @@
     background: $redColor;
     border-radius: 10px;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         height: 18px;
         max-width: 84px;
     }
@@ -20,7 +20,7 @@
         font-weight: normal;
         line-height: 20px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             font-size: 10px;
         }
     }

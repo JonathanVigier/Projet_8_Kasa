@@ -6,7 +6,7 @@
     &.detailed-dwelling {
         margin-bottom: 50px;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             margin-bottom: 20px;
         }
     }
@@ -22,7 +22,7 @@
         background: $redColor;
         z-index: 2;
 
-        @media screen and (max-width: 425px) {
+        @media screen and (max-width: 426px) {
             height: 30px;
         }
 
@@ -35,7 +35,7 @@
             font-size: 24px;
             font-weight: 500;
 
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 426px) {
                 font-size: 0.8rem;
             }
 
@@ -65,7 +65,7 @@
             color: $redColor;
             transition: transform .3s ease-in-out;
 
-            @media screen and (max-width: 425px) {
+            @media screen and (max-width: 426px) {
                 font-size: 0.8rem;
                 line-height: 17px;
             }
@@ -96,7 +96,7 @@
     max-width: 1023px;
     margin: 0 auto 30px auto;
 
-    @media screen and (max-width: 425px) {
+    @media screen and (max-width: 426px) {
         padding: 0 20px;
     }
 
