@@ -847,7 +847,7 @@ li {
   padding: 40px 117px 10px 100px;
   animation: fade 3s;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader {
     padding: 20px;
   }
@@ -867,7 +867,7 @@ li {
   position: relative;
   width: 210px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .header-loader .logo-loader {
     width: 100px;
   }
@@ -879,7 +879,7 @@ li {
   gap: 55px;
   width: 309px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .header-loader .nav-loader {
     width: 130px;
     gap: 15px;
@@ -894,7 +894,7 @@ li {
   position: relative;
   height: 415px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .carousel-loader {
     height: 255px;
   }
@@ -907,14 +907,14 @@ li {
   align-items: center;
   margin-top: 30px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .detailed-dwelling-loader {
     grid-template-columns: none;
     grid-template-rows: none;
     grid-template-areas: "dwelling-infos dwelling-infos" "tag tag" "star host";
   }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .detailed-dwelling-loader .dwelling-infos-loader {
     grid-area: dwelling-infos;
     margin-bottom: 10px;
@@ -926,7 +926,7 @@ li {
   height: 50px;
   margin-bottom: 10px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .detailed-dwelling-loader .dwelling-infos-loader .dwelling-title-loader {
     width: 200px;
   }
@@ -947,7 +947,7 @@ li {
   justify-self: end;
   gap: 10px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .detailed-dwelling-loader .host-infos-loader {
     grid-area: host;
   }
@@ -967,7 +967,7 @@ li {
   display: flex;
   gap: 10px;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .detailed-dwelling-loader .tags-loader {
     grid-area: tag;
     margin-bottom: 15px;
@@ -983,7 +983,7 @@ li {
   gap: 15px;
   justify-self: end;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
   .skeleton-loader .detailed-dwelling-loader .stars-loader {
     grid-area: star;
     gap: 5px;

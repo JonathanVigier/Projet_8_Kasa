@@ -109,7 +109,7 @@
     padding: 40px 117px 10px 100px;
     animation: fade 3s;
 
-    @media screen and (max-width:425px) {
+    @media screen and (max-width:426px) {
         padding: 20px;
     }
 
@@ -127,7 +127,7 @@
             position: relative;
             width: 210px;
 
-            @media screen and (max-width:425px) {
+            @media screen and (max-width:426px) {
                 width: 100px;
             }
         }
@@ -139,7 +139,7 @@
             gap: 55px;
             width: 309px;
 
-            @media screen and (max-width:425px) {
+            @media screen and (max-width:426px) {
                 width: 130px;
                 gap: 15px;
             }
@@ -156,7 +156,7 @@
         position: relative;
         height: 415px;
 
-        @media screen and (max-width:425px) {
+        @media screen and (max-width:426px) {
             height: 255px;
         }
     }
@@ -169,7 +169,7 @@
         align-items: center;
         margin-top: 30px;
 
-        @media screen and (max-width:425px) {
+        @media screen and (max-width:426px) {
             grid-template-columns: none;
             grid-template-rows: none;
             grid-template-areas: "dwelling-infos dwelling-infos"
@@ -179,7 +179,7 @@
 
         .dwelling-infos-loader {
 
-            @media screen and (max-width:425px) {
+            @media screen and (max-width:426px) {
                 grid-area: dwelling-infos;
                 margin-bottom: 10px;
             }
@@ -190,7 +190,7 @@
                 height: 50px;
                 margin-bottom: 10px;
 
-                @media screen and (max-width:425px) {
+                @media screen and (max-width:426px) {
                     width: 200px;
                 }
 
@@ -212,7 +212,7 @@
             justify-self: end;
             gap: 10px;
 
-            @media screen and (max-width:425px) {
+            @media screen and (max-width:426px) {
                 grid-area: host;
             }
 
@@ -234,7 +234,7 @@
             display: flex;
             gap: 10px;
 
-            @media screen and (max-width:425px) {
+            @media screen and (max-width:426px) {
                 grid-area: tag;
                 margin-bottom: 15px;
             }
@@ -251,7 +251,7 @@
             gap: 15px;
             justify-self: end;
 
-            @media screen and (max-width:425px) {
+            @media screen and (max-width:426px) {
                 grid-area: star;
                 gap: 5px;
                 justify-self: start;

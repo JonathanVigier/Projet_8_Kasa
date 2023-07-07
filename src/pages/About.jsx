@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="about-app-container">
       <Header />
-      <Banner title={"about-banner"} text={""} />
+      <Banner image={"about-banner.png"} title={"about-banner"} text={""} />
       <div className="collapses-container">
         <Collapse
           title={"Fiabilité"}

@@ -19,6 +19,7 @@ const DwellingPage = () => {
     }, 3000);
 
     fetchDwelling(id);
+    console.log(id);
     return () => clearTimeout(timer);
   }, []);
 

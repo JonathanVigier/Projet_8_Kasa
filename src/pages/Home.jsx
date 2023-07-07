@@ -36,7 +36,11 @@ const Home = () => {
   return (
     <div className="app-container">
       <Header />
-      <Banner title={"home-banner"} text={"Chez vous, partout et ailleurs"} />
+      <Banner
+        image={"home-banner.png"}
+        title={"home-banner"}
+        text={"Chez vous, partout et ailleurs"}
+      />
       <Dwellings dwellings={dwellingsData} />
       <Footer />
       <Outlet />

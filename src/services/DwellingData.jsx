@@ -1,25 +1,21 @@
 import { HttpRequestHandler } from "../utils/ErrorHandler.jsx";
 
-let dwellings = [];
+let dwellings;
 
 export const getAllDwellings = async () => {
   let response;
 
   try {
-    response = await fetch("http://localhost:3001/api/dwellings");
-    const contentLength = response.headers.get("Content-Length");
+    response = await fetch("/database/homes.json");
 
     HttpRequestHandler(response);
-    console.log(response);
-    console.log(contentLength);
 
-    if (contentLength > 0) {
+    if (response.ok) {
       const data = await response.json();
       dwellings = data.homes;
-    } else {
-      dwellings = [];
+
+      return dwellings;
     }
-    return dwellings;
   } catch (error) {
     console.error(error);
   }

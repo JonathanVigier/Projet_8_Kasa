@@ -3,7 +3,7 @@ import Slider from "./Slider";
 import PropTypes from "prop-types";
 
 const Carousel = ({ pictures }) => {
-  const [data, setData] = useState({ pictures: [] });
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     setData(pictures);
@@ -11,7 +11,7 @@ const Carousel = ({ pictures }) => {
 
   return (
     <div className="carousel">
-      <Slider key={data.id} pictures={data.pictures} />
+      <Slider key={data.id} pictures={data} />
     </div>
   );
 };
