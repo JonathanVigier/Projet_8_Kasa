@@ -4,7 +4,6 @@ import Dwellings from "../components/Dwellings";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
 import Loader from "../components/Loader";
-import { Outlet } from "react-router-dom";
 import { getAllDwellings } from "../services/DwellingData";
 
 const Home = () => {
@@ -43,7 +42,6 @@ const Home = () => {
       />
       <Dwellings dwellings={dwellingsData} />
       <Footer />
-      <Outlet />
     </div>
   );
 };

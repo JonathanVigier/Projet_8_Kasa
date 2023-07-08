@@ -15,11 +15,10 @@ const DwellingPage = () => {
 
   useEffect(() => {
     const timer = setTimeout(() => {
-      setIsLoading(false);
+      setIsLoading(true);
     }, 3000);
 
     fetchDwelling(id);
-    console.log(id);
     return () => clearTimeout(timer);
   }, []);
 

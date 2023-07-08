@@ -1,9 +1,8 @@
 import { HttpRequestHandler } from "../utils/ErrorHandler.jsx";
 
-let dwellings;
-
 export const getAllDwellings = async () => {
   let response;
+  let dwellings;
 
   try {
     response = await fetch("/database/homes.json");
@@ -23,6 +22,7 @@ export const getAllDwellings = async () => {
 
 export const getDwellingById = async (id) => {
   try {
+    const dwellings = await getAllDwellings();
     const dwelling = dwellings.find((dwelling) => dwelling.id === id);
     return dwelling;
   } catch {
